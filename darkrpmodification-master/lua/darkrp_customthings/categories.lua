@@ -21,3 +21,24 @@ DarkRP.createCategory{
 Add new categories under the next line!
 ---------------------------------------------------------------------------]]
 
+DarkRP.createCategory{
+    name = "Unsorted",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(47, 79, 79, 255),
+}
+ 
+ DarkRP.createCategory{
+    name = "Gryffindor",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(196, 45, 45, 255),
+}
+ 
+ DarkRP.createCategory{
+    name = "Slytherin",
+    categorises = "jobs",
+    startExpanded = true,
+    color = Color(196, 45, 45, 255),
+}
+ 

@@ -62,3 +62,10 @@ DarkRP.createCategory{
     startExpanded = true,
     color = Color(196, 45, 45, 255),
 } 
+
+ DarkRP.createCategory{
+    name = "Teachers",
+    categorises = category.jobs,
+    startExpanded = true,
+    color = Color(196, 45, 45, 255),
+}

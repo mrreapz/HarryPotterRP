@@ -11,8 +11,8 @@ AddAgenda(Title of the agenda, Manager (who edits it), {Listeners (the ones who 
 -- Example: AddAgenda("Police agenda", TEAM_MAYOR, {TEAM_CHIEF, TEAM_POLICE})
 
 
-AddAgenda("Gryffindor Agenda", TEAM_GRYFFINDOR, {TEAM_GRYFFINDOR})
-AddAgenda("Slytherin Agenda", TEAM_SLYTHERIN, {TEAM_SLYTHERIN})
-AddAgenda("Hufflepuff Agenda", TEAM_HUFFLEPUFF, {TEAM_HUFFLEPUFF})
-AddAgenda("Ravenclaw Agenda", TEAM_RAVENCLAW, {TEAM_RAVENCLAW})
-AddAgenda("Hogwarts Agenda", TEAM_HEADMASTER, {TEAM_GRYFFINDOR, TEAM_SLYTHERIN, TEAM_HUFFLEPUFF, TEAM_RAVENCLAW, TEAMNURSE})
+--AddAgenda("Gryffindor agenda", TEAM_GRYFFINDOR, {TEAM_GRYFFINDOR})
+--AddAgenda("Slytherin agenda", TEAM_SLYTHERIN, {TEAM_SLYTHERIN})
+--AddAgenda("Hufflepuff agenda", TEAM_HUFFLEPUFF, {TEAM_HUFFLEPUFF})
+--AddAgenda("Ravenclaw agenda", TEAM_RAVENCLAW, {TEAM_RAVENCLAW})
+--AddAgenda("Hogwarts agenda", TEAM_HEADMASTER, {TEAM_GRYFFINDOR, TEAM_SLYTHERIN, TEAM_HUFFLEPUFF, TEAM_RAVENCLAW, TEAMNURSE})-----

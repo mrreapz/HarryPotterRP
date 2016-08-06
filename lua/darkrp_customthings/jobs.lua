@@ -44,7 +44,7 @@ TEAM_STUDENTGRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
     admin = 0,
     vote = false,
     hasLicense = false,
-	category = "Student",
+	category = "Gryffindor",
 })
 
 TEAM_STUDENTSLYTHERIN = DarkRP.createJob("Slytherin Student", {
@@ -118,6 +118,24 @@ TEAM_NURSE = DarkRP.createJob("Nurse", {
     category = "Teachers",
 })
 
+TEAM_SNAPE = DarkRP.createJob("DADA Teacher", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
+   description = [[There will be no foolish wand-waving or silly incantations in this class.]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "DADA Teacher",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   medic = false,
+   chief = false,
+   mayor = false,
+   hobo = false,
+   cook = false,
+   category = "Teachers",
+})
 
 GAMEMODE.DefaultTeam = TEAM_UNSORTED
 

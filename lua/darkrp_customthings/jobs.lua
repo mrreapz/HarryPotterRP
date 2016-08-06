@@ -33,7 +33,7 @@ TEAM_UNSORTED = DarkRP.createJob("Unsorted", {
 	category = "Unsorted",
 })
 
-TEAM_STUDENTGRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
+TEAM_GRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
     color = Color(196, 45, 45, 255),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Gryffindor Student.]],
@@ -47,7 +47,7 @@ TEAM_STUDENTGRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
 	category = "Gryffindor",
 })
 
-TEAM_STUDENTSLYTHERIN = DarkRP.createJob("Slytherin Student", {
+TEAM_SLYTHERIN = DarkRP.createJob("Slytherin Student", {
     color = Color(33, 203, 55, 255),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Slytherin Student.]],
@@ -61,7 +61,7 @@ TEAM_STUDENTSLYTHERIN = DarkRP.createJob("Slytherin Student", {
 	category = "Slytherin",
 })
 
-TEAM_STUDENTHUFFLEPUFF = DarkRP.createJob("Hufflepuff Student", {
+TEAM_HUFFLEPUFF = DarkRP.createJob("Hufflepuff Student", {
     color = Color(255, 213, 0, 255),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Hufflepuff Student.]],
@@ -75,7 +75,7 @@ TEAM_STUDENTHUFFLEPUFF = DarkRP.createJob("Hufflepuff Student", {
 	category = "Hufflepuff",
 })
 
-TEAM_STUDENTRAVENCLAW = DarkRP.createJob("Ravenclaw Student", {
+TEAM_RAVENCLAW = DarkRP.createJob("Ravenclaw Student", {
     color = Color(0, 119, 225, 255),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Ravenclaw Student.]],

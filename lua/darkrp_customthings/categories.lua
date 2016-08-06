@@ -20,25 +20,45 @@ DarkRP.createCategory{
 
 Add new categories under the next line!
 ---------------------------------------------------------------------------]]
-
+local category = {
+    jobs = "jobs",
+    entities = "entities",
+    shipments = "shipments",
+    weapons = "weapons",
+    vehicles = "vehicles",
+    ammo = "ammo"
+}
 DarkRP.createCategory{
     name = "Unsorted",
-    categorises = "jobs",
+    categorises = category.jobs,
     startExpanded = true,
     color = Color(47, 79, 79, 255),
 }
  
  DarkRP.createCategory{
     name = "Gryffindor",
-    categorises = "jobs",
+    categorises = category.jobs,
     startExpanded = true,
     color = Color(196, 45, 45, 255),
 }
  
  DarkRP.createCategory{
     name = "Slytherin",
-    categorises = "jobs",
+    categorises = category.jobs,
+    startExpanded = true,
+    color = Color(196, 45, 45, 255),
+}
+
+ DarkRP.createCategory{
+    name = "Hufflepuff",
+    categorises = category.jobs,
     startExpanded = true,
     color = Color(196, 45, 45, 255),
 }
  
+ DarkRP.createCategory{
+    name = "Ravenclaw",
+    categorises = category.jobs,
+    startExpanded = true,
+    color = Color(196, 45, 45, 255),
+} 

@@ -109,7 +109,7 @@ local function HudArmor()
 	draw.RoundedBox(6, HUD.PosX+5, HUD.PosY+HUD.Height-24-5, HUD.Width-10, 24, Color(0, 0, 0, 200))
 	
 	--deleteme
-	local currentJob = LocalPlayer():getDarkRPVar("Job")
+	local currentJob = LocalPlayer():getDarkRPVar("job")
 	local houseMessage = ""
 
 	if currentJob == TEAM_SLYTHERIN then

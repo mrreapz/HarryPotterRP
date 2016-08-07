@@ -20,12 +20,12 @@ class[6] = "Astronomy"
 
 local totalClasses = 6
 
-houseClass = {
-	house.slytherin = "",
-	house.gryffindor = "",
-	house.hufflepuff = "",
-	house.ravenclaw = "",
-}
+houseClass = {}
+houseClass[house.slytherin] = ""
+houseClass[house.gryffindor] = ""
+houseClass[house.hufflepuff] = ""
+houseClass[house.ravenclaw] = ""
+
 
 timer.Create( "ClassTime", classDuration, 0, function()
 	if (true) then

@@ -40,8 +40,8 @@ local shouldDraw, players = hook.Call("HUDShouldDraw", GAMEMODE, "DarkRP_EntityD
 				pos.z = pos.z + 10 -- The position we want is a bit above the position of the eyes
 				pos = pos:ToScreen()
 				pos.y = pos.y-20
-				draw.DrawText('Level: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x+1, pos.y -56, Color(0,0,0,255), 1)
-				draw.DrawText('Level: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x, pos.y -55, Color(255,255,255,200), 1)
+				draw.DrawText('Year: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x+1, pos.y -56, Color(0,0,0,255), 1)
+				draw.DrawText('Year: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x, pos.y -55, Color(255,255,255,200), 1)
 		elseif not GAMEMODE.Config.globalshow and hisPos:Distance(shootPos) < 250 then
 			local pos = hisPos - shootPos
 			local unitPos = pos:GetNormalized()
@@ -52,8 +52,8 @@ local shouldDraw, players = hook.Call("HUDShouldDraw", GAMEMODE, "DarkRP_EntityD
 					pos.z = pos.z + 10 -- The position we want is a bit above the position of the eyes
 					pos = pos:ToScreen()
 					pos.y = pos.y-20
-					draw.DrawText('Level: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x, pos.y -58, Color(0,0,0,255), 1)
-					draw.DrawText('Level: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x+1, pos.y -57, Color(255,255,255,200), 1)
+					draw.DrawText('Year: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x, pos.y -58, Color(0,0,0,255), 1)
+					draw.DrawText('Year: '..(ply:getDarkRPVar('level') or 0), "DarkRPHUD2", pos.x+1, pos.y -57, Color(255,255,255,200), 1)
 		end
 	end
  
@@ -77,7 +77,7 @@ local function HUDPaint()
 	
 	local percent2 = percent*100
 	percent2 = math.Round(percent2)
-	percent2 = math.Clamp(percent2, 0, 99) //Make sure it doesn't round past 100%
+	percent2 = math.Clamp(percent2, 0, 99) //Make sure it doesnt round past 100%
 
 	surface.SetDrawColor(0,0,0,200)
 	surface.DrawRect(ScrW()/2-300,0,580,25)
@@ -95,8 +95,8 @@ local function HUDPaint()
 
 	// Render the text
 	draw.DrawText(percent2 ..'%', "HeadBar", ScrW()/2,7,(LevelSystemConfiguration.XPTextColor or Color(255,255,255,255)), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-	draw.SimpleText('Level: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1],ScrH()-LevelSystemConfiguration.LevelTextPos[2],((Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
-	draw.SimpleText('Level: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1]+1,ScrH()-LevelSystemConfiguration.LevelTextPos[2]-1,(LevelSystemConfiguration.LevelColor or (Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
+	draw.SimpleText('Year: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1],ScrH()-LevelSystemConfiguration.LevelTextPos[2],((Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
+	draw.SimpleText('Year: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1]+1,ScrH()-LevelSystemConfiguration.LevelTextPos[2]-1,(LevelSystemConfiguration.LevelColor or (Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
 
 	//DrawEntityDisplay()
 	DrawDisplay()

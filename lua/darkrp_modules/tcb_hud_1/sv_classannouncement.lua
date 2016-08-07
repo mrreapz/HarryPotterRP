@@ -1,5 +1,6 @@
 math.randomseed(os.time())
 
+local classDuration = 30
 
 house = {
 	slytherin = "Slytherin",

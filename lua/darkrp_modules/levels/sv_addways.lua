@@ -49,7 +49,7 @@ timer.Create( "PlayXP", time,0,function()
 		for k,v in pairs(player.GetAll()) do 
 			local XP = v:addXP(LevelSystemConfiguration.TimerXPAmount,true)
 			if(XP) then
-				DarkRP.notify(v,0,4,"You got "..XP.."XP for playing "..LevelSystemConfiguration.YourServerName) 
+				DarkRP.notify(v,0,4,"+xp") 
 			end
 		end
 	end

@@ -239,19 +239,19 @@ local function HudClass()
 	local currentJob = LocalPlayer():getDarkRPVar("Job")
 	local houseMessage = ""
 
-	if currentJob == TEAM_SLYTHERIN then
-		houseMessage = houseClass[house.slytherin] + "1"
+	if currentJob == "Slytherin Student" then
+		houseMessage = houseClass[house.slytherin]
 
-	elseif currentJob == TEAM_RAVENCLAW then
-		houseMessage = houseClass[house.ravenclaw] + "2"
+	elseif currentJob == "Ravenclaw Student" then
+		houseMessage = houseClass[house.ravenclaw]
 
-	elseif currentJob == TEAM_HUFFLEPUFF then
-		houseMessage = houseClass[house.hufflepuff] + "3"
+	elseif currentJob == "Hufflepuff Student" then
+		houseMessage = houseClass[house.hufflepuff]
 
-	elseif currentJob == TEAM_GRYFFINDOR then 
-		houseMessage = houseClass[house.gryffindor] + "4"
+	elseif currentJob == "Gryffindor Student" then 
+		houseMessage = houseClass[house.gryffindor]
 	else 
-		houseMessage = "Error: current class = " .. tostring(currentJob)
+		houseMessage = "Error: current class = " .. tostring(currentJob) .. "\n" .. houseClass[house.gryffindor] 
     end
 	--TODO: generate color based on LocalPlayer():getDarkRPVar("Job")
 	draw.RoundedBoxEx(6, HUD.PosX+5, HUD.PosY+24, HUD.Width-10, 24, Color(255, 204, 102, 128), true, true, false, false)

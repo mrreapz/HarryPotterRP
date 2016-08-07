@@ -230,10 +230,10 @@ local function DrawTCB()
 	HudBase()
 	
 	HudHealth()	
-	HudArmor()
+	HudClass()
 	
 	HudName()
-	HudClass()
+	HudJob()
 	
 	HudMoney()
 	HudSalary()

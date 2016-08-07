@@ -214,6 +214,29 @@ local function HudWanted()
 	end
 end
 
+local function HudClass()
+	local currentJob == LocalPlayer():getDarkRPVar("Job")
+	local houseMessage = ""
+
+	if currentJob == TEAM_SLYTHERIN then
+		houseMessage = houseClass[house.slytherin]
+
+	else if currentJob == TEAM_RAVENCLAW then
+		houseMessage = houseClass[house.ravenclaw]
+
+	else if currentJob == TEAM_HUFFLEPUFF then
+		houseMessage = houseClass[house.hufflepuff]
+
+	else if currentJob == TEAM_GRYFFINDOR then 
+		houseMessage = houseClass[house.gryffindor]
+
+    end
+	--TODO: generate color based on LocalPlayer():getDarkRPVar("Job")
+	draw.RoundedBoxEx(6, HUD.PosX+5, HUD.PosY+24, HUD.Width-10, 24, Color(255, 204, 102, 128), true, true, false, false)
+	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2+1, HUD.PosY+24+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2, HUD.PosY+24+3, Color(255, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+end
+
 /*---------------------------------------------------------------------------
 HUD Draw
 ---------------------------------------------------------------------------*/
@@ -487,7 +510,7 @@ end
 usermessage.Hook("_Notify", DisplayNotify)
 
 /*---------------------------------------------------------------------------
-Disable players' names popping up when looking at them
+Disable players names popping up when looking at them
 ---------------------------------------------------------------------------*/
 function GAMEMODE:HUDDrawTargetID()
     return false

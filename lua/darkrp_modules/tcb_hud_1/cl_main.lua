@@ -105,36 +105,33 @@ local function HudBase()
 	surface.SetFont("TCBFont")
 end
 
-local function HudArmor()
-	draw.RoundedBox(6, HUD.PosX+5, HUD.PosY+HUD.Height-24-5, HUD.Width-10, 24, Color(0, 0, 0, 200))
+local function HudClass()
+	draw.RoundedBox(6, HUD.PosX+5, HUD.PosY+HUD.Height-24-5, HUD.Width-10, 24, Color(255, 204, 102, 200))
 	
 	--deleteme
-	local currentJob = LocalPlayer():getDarkRPVar("job")
-	local houseMessage = ""
+	if currentJob == "Slytherin Student" then
+		houseMessage = houseClass[house.slytherin]
 
-	if currentJob == TEAM_SLYTHERIN then
-		houseMessage = houseClass[house.slytherin] + "1"
+	elseif currentJob == "Ravenclaw Student" then
+		houseMessage = houseClass[house.ravenclaw]
 
-	elseif currentJob == TEAM_RAVENCLAW then
-		houseMessage = houseClass[house.ravenclaw] + "2"
+	elseif currentJob == "Hufflepuff Student" then
+		houseMessage = houseClass[house.hufflepuff]
 
-	elseif currentJob == TEAM_HUFFLEPUFF then
-		houseMessage = houseClass[house.hufflepuff] + "3"
-
-	elseif currentJob == TEAM_GRYFFINDOR then 
-		houseMessage = houseClass[house.gryffindor] + "4"
+	elseif currentJob == "Gryffindor Student" then 
+		houseMessage = houseClass[house.gryffindor]
 	else 
-		houseMessage = "Error: current class = " .. tostring(currentJob)
+		houseMessage = "Error: current class = " .. tostring(currentJob) .. "\n" .. houseClass[house.gryffindor] 
     end
 	--/deleteme
 
-	local Armor = LocalPlayer():Armor() or 0
-	local FullArmor = LocalPlayer():Armor() or 0
-	if Armor < 0 then Armor = 0 elseif Armor > 100 then Armor = 100 end
+	--local Armor = LocalPlayer():Armor() or 0
+	--local FullArmor = LocalPlayer():Armor() or 0
+	--if Armor < 0 then Armor = 0 elseif Armor > 100 then Armor = 100 end
 	
-	if Armor != 0 then
-		draw.RoundedBox(6, HUD.PosX+5+2, HUD.PosY+HUD.Height-24-5+2, (HUD.Width-10-4) * Armor / 100, 24-4, HUD.ArmorColor)
-	end
+	--if Armor != 0 then
+	--	draw.RoundedBox(6, HUD.PosX+5+2, HUD.PosY+HUD.Height-24-5+2, (HUD.Width-10-4) * Armor / 100, 24-4, HUD.ArmorColor)
+	--end
 	
 	--draw.DrawText(HUD.Armor..": "..FullArmor, "TCBFont", HUD.PosX+HUD.Width/2+1, HUD.PosY+HUD.Height-24-5+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	--draw.DrawText(HUD.Armor..": "..FullArmor, "TCBFont", HUD.PosX+HUD.Width/2, HUD.PosY+HUD.Height-24-5+3, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
@@ -235,30 +232,6 @@ local function HudWanted()
 		draw.DrawText(HUD.Wanted1, "TCBFont", HUD.PosX+HUD.Width-HUD.Width/4, HUD.PosY-24+4, Color(0, 255, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)	end
 end
 
-local function HudClass()
-	local currentJob = LocalPlayer():getDarkRPVar("Job")
-	local houseMessage = ""
-
-	if currentJob == "Slytherin Student" then
-		houseMessage = houseClass[house.slytherin]
-
-	elseif currentJob == "Ravenclaw Student" then
-		houseMessage = houseClass[house.ravenclaw]
-
-	elseif currentJob == "Hufflepuff Student" then
-		houseMessage = houseClass[house.hufflepuff]
-
-	elseif currentJob == "Gryffindor Student" then 
-		houseMessage = houseClass[house.gryffindor]
-	else 
-		houseMessage = "Error: current class = " .. tostring(currentJob) .. "\n" .. houseClass[house.gryffindor] 
-    end
-	--TODO: generate color based on LocalPlayer():getDarkRPVar("Job")
-	draw.RoundedBoxEx(6, HUD.PosX+5, HUD.PosY+24, HUD.Width-10, 24, Color(255, 204, 102, 128), true, true, false, false)
-	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2+1, HUD.PosY+HUD.Height+24+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2, HUD.PosY+HUD.Height+24+3, Color(255, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-end
-
 /*---------------------------------------------------------------------------
 HUD Draw
 ---------------------------------------------------------------------------*/
@@ -267,7 +240,7 @@ local function DrawTCB()
 	HudBase()
 	
 	HudHealth()	
-	HudArmor()
+	HudClass()
 	
 	HudName()
 	HudJob()
@@ -275,7 +248,6 @@ local function DrawTCB()
 	HudMoney()
 	HudSalary()
 
-	HudClass()
 	
 	if HUD.ShowLicenseWanted == true then
 	HudLicense()

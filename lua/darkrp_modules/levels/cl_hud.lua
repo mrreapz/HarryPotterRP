@@ -95,9 +95,9 @@ local function HUDPaint()
 
 	// Render the text
 	draw.DrawText(percent2 ..'%', "HeadBar", ScrW()/2,7,(LevelSystemConfiguration.XPTextColor or Color(255,255,255,255)), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-	draw.SimpleText('Year: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1],ScrH()-LevelSystemConfiguration.LevelTextPos[2],((Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
-	draw.SimpleText('Year: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1]+1,ScrH()-LevelSystemConfiguration.LevelTextPos[2]-1,(LevelSystemConfiguration.LevelColor or (Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
-
+	draw.SimpleText('Year: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1],LevelSystemConfiguration.LevelTextPos[2],((Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
+	draw.SimpleText('Year: ' ..(LocalPlayer():getDarkRPVar('level') or 0), "Boobss", LevelSystemConfiguration.LevelTextPos[1]+1,LevelSystemConfiguration.LevelTextPos[2]-1,(LevelSystemConfiguration.LevelColor or (Color(0,0,0,255))), TEXT_ALIGN_LEFT, TEXT_ALIGN_LEFT)
+		--To change the corner of the year display, you can use ScrW() - xValue and ScrH() - yValue
 	//DrawEntityDisplay()
 	DrawDisplay()
 end

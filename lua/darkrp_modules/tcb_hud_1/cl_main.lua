@@ -232,8 +232,8 @@ local function HudClass()
     end
 	--TODO: generate color based on LocalPlayer():getDarkRPVar("Job")
 	draw.RoundedBoxEx(6, HUD.PosX+5, HUD.PosY+24, HUD.Width-10, 24, Color(255, 204, 102, 128), true, true, false, false)
-	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2+1, HUD.PosY+24+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2, HUD.PosY+24+3, Color(255, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2+1, HUD.PosY+HUD.Height+24+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+5+HUD.Width/2, HUD.PosY+HUD.Height+24+3, Color(255, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 end
 
 /*---------------------------------------------------------------------------

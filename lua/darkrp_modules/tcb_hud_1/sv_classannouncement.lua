@@ -1,6 +1,5 @@
 math.randomseed(os.time())
 
-local classDuration = 7 * 60
 
 house = {
 	slytherin = "Slytherin",

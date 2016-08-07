@@ -210,12 +210,11 @@ local function HudWanted()
 		draw.DrawText(HUD.Wanted2, "TCBFont", HUD.PosX+HUD.Width-HUD.Width/4, HUD.PosY-24+4, Color(255, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	else
 		draw.DrawText(HUD.Wanted1, "TCBFont", HUD.PosX+HUD.Width-HUD.Width/4+1, HUD.PosY-24+4+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-		draw.DrawText(HUD.Wanted1, "TCBFont", HUD.PosX+HUD.Width-HUD.Width/4, HUD.PosY-24+4, Color(0, 255, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-	end
+		draw.DrawText(HUD.Wanted1, "TCBFont", HUD.PosX+HUD.Width-HUD.Width/4, HUD.PosY-24+4, Color(0, 255, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)	end
 end
 
 local function HudClass()
-	local currentJob == LocalPlayer():getDarkRPVar("Job")
+	local currentJob = LocalPlayer():getDarkRPVar("Job")
 	local houseMessage = ""
 
 	if currentJob == TEAM_SLYTHERIN then
@@ -252,6 +251,8 @@ local function DrawTCB()
 	
 	HudMoney()
 	HudSalary()
+
+	HudClass()
 	
 	if HUD.ShowLicenseWanted == true then
 	HudLicense()

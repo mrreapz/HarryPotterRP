@@ -28,6 +28,11 @@ local hideHUDElements = {
 
 	-- Arrested HUD
 	["DarkRP_ArrestedHUD"] = false,
+
+	--Default hud
+	["CHudHealth"] = true,
+	["CHudBattery"] = true,
+	["CHudSuitPower"] = true
 }
 
 -- this is the code that actually disables the drawing.

@@ -122,7 +122,7 @@ local function HudClass()
 	elseif currentJob == "Gryffindor Student" then 
 		houseMessage = houseClass[house.gryffindor]
 	else 
-		houseMessage = "Error: current class = " .. tostring(currentJob) .. "\n" .. houseClass[house.gryffindor] 
+		houseMessage = "Current class = " .. currentJob .. "\n" .. houseClass[house.gryffindor] 
     end
 
 	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+HUD.Width/2+1, HUD.PosY+HUD.Height-24-5+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)

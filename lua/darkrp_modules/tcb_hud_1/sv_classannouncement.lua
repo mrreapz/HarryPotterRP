@@ -2,11 +2,12 @@ math.randomseed(os.time())
 
 local classDuration = 7 * 60
 
-house = {}
+house = {
 	slytherin = "Slytherin",
 	gryffindor = "Gryffindor",
 	hufflepuff = "Hufflepuff",
 	ravenclaw = "Ravenclaw"
+}
 
 class = {}
 

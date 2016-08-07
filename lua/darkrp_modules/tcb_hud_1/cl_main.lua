@@ -108,6 +108,26 @@ end
 local function HudArmor()
 	draw.RoundedBox(6, HUD.PosX+5, HUD.PosY+HUD.Height-24-5, HUD.Width-10, 24, Color(0, 0, 0, 200))
 	
+	--deleteme
+	local currentJob = LocalPlayer():getDarkRPVar("Job")
+	local houseMessage = ""
+
+	if currentJob == TEAM_SLYTHERIN then
+		houseMessage = houseClass[house.slytherin] + "1"
+
+	elseif currentJob == TEAM_RAVENCLAW then
+		houseMessage = houseClass[house.ravenclaw] + "2"
+
+	elseif currentJob == TEAM_HUFFLEPUFF then
+		houseMessage = houseClass[house.hufflepuff] + "3"
+
+	elseif currentJob == TEAM_GRYFFINDOR then 
+		houseMessage = houseClass[house.gryffindor] + "4"
+	else 
+		houseMessage = "Error: current class = " .. tostring(currentJob)
+    end
+	--/deleteme
+
 	local Armor = LocalPlayer():Armor() or 0
 	local FullArmor = LocalPlayer():Armor() or 0
 	if Armor < 0 then Armor = 0 elseif Armor > 100 then Armor = 100 end
@@ -116,8 +136,10 @@ local function HudArmor()
 		draw.RoundedBox(6, HUD.PosX+5+2, HUD.PosY+HUD.Height-24-5+2, (HUD.Width-10-4) * Armor / 100, 24-4, HUD.ArmorColor)
 	end
 	
-	draw.DrawText(HUD.Armor..": "..FullArmor, "TCBFont", HUD.PosX+HUD.Width/2+1, HUD.PosY+HUD.Height-24-5+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
-	draw.DrawText(HUD.Armor..": "..FullArmor, "TCBFont", HUD.PosX+HUD.Width/2, HUD.PosY+HUD.Height-24-5+3, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	--draw.DrawText(HUD.Armor..": "..FullArmor, "TCBFont", HUD.PosX+HUD.Width/2+1, HUD.PosY+HUD.Height-24-5+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	--draw.DrawText(HUD.Armor..": "..FullArmor, "TCBFont", HUD.PosX+HUD.Width/2, HUD.PosY+HUD.Height-24-5+3, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+HUD.Width/2+1, HUD.PosY+HUD.Height-24-5+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+HUD.Width/2, HUD.PosY+HUD.Height-24-5+3, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 end
 
 local function HudHealth()

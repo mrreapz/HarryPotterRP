@@ -7,15 +7,20 @@
 ---------------------------------------------------------------------------*/
 
 local hideHUDElements = {
+		--DarkRP hud
         ["DarkRP_HUD"] = true,
         ["DarkRP_EntityDisplay"] = false,
         ["DarkRP_ZombieInfo"] = false,
         ["DarkRP_LocalPlayerHUD"] = true,
         ["DarkRP_Agenda"] = false,
 		["DarkRP_Hungermod"] = true,
+		--Default hud
+		["CHudHealth"] = true,
+		["CHudBattery"] = true,
+		["CHudSuitPower"] = true
 }
 hook.Add("HUDShouldDraw", "HideDefaultDarkRPHud", function(name)
-        if hideHUDElements[name] or name == "CHudHealth" or name == "CHudBattery" or name == "CHudSuitPower" then return false end
+        if hideHUDElements[name] then return false end
 end)
 
 /*---------------------------------------------------------------------------

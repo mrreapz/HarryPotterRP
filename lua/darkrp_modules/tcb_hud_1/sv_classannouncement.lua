@@ -5,6 +5,7 @@ local classDuration = 30
 timer.Create( "ClassTime", classDuration, 0, function()
 	if (true) then
 		for k,v in pairs(player.GetAll()) do
+			DarkRP.notify(v,0,4,"Class is over, please make your way to your next class")
 			local newClass1 = math.random(1,totalClasses)
 			local newClass2 = math.random(1,totalClasses)
 			while (newClass1 == newClass2) do
@@ -20,8 +21,6 @@ timer.Create( "ClassTime", classDuration, 0, function()
 			houseClass[house.gryffindor] = class[newClass2]
 			houseClass[house.hufflepuff] = class[newClass1]
 			houseClass[house.ravenclaw] = class[newClass2]
-
-			DarkRP.notify(v,0,4,"Class is over, please make your way to your next class")
 		end
 	end
 end)

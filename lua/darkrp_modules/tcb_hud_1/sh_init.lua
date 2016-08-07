@@ -14,7 +14,7 @@ class[4] = "Transfiguration"
 class[5] = "Hagrid's 'Class'"
 class[6] = "Astronomy"
 
-local totalClasses = 6
+totalClasses = 6
 
 houseClass = {}
 houseClass[house.slytherin] = ""

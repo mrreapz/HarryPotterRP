@@ -220,13 +220,13 @@ local function HudClass()
 	if currentJob == TEAM_SLYTHERIN then
 		houseMessage = houseClass[house.slytherin]
 
-	else if currentJob == TEAM_RAVENCLAW then
+	elseif currentJob == TEAM_RAVENCLAW then
 		houseMessage = houseClass[house.ravenclaw]
 
-	else if currentJob == TEAM_HUFFLEPUFF then
+	elseif currentJob == TEAM_HUFFLEPUFF then
 		houseMessage = houseClass[house.hufflepuff]
 
-	else if currentJob == TEAM_GRYFFINDOR then 
+	elseif currentJob == TEAM_GRYFFINDOR then 
 		houseMessage = houseClass[house.gryffindor]
 
     end

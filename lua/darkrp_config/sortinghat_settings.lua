@@ -14,7 +14,7 @@ shat.config.mapspawn = {}
 
 shat.config.mapspawn["rp_hogwarts"] = {
 	{
-		pos = Vector(-2293, 1506, 144),
+		pos = Vector(1, -284, 64),
 		ang = Angle( 0, 0, 0 )
 	}
 }

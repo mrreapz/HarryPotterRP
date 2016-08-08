@@ -15,7 +15,6 @@ function ENT:Initialize()
 	self:SetMoveType( MOVETYPE_VPHYSICS )
 	self:SetSolid( SOLID_VPHYSICS )
 	self:SetUseType( SIMPLE_USE )
-	self.health = 10000000
 	
 	local phys = self:GetPhysicsObject()
 	if phys:IsValid() then
@@ -25,6 +24,5 @@ end
 
 function ENT:Use( activator )
 	activator:SetHealth(50)
-	activator:SetRunSpeed(GAMEMODE.Config.runspeed * 2)
-	activator:changeTeam(TEAM_GRYFFINDOR)
+	--activator:changeTeam(TEAM_GRYFFINDOR)
 end

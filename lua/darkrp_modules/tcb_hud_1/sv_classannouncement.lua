@@ -30,7 +30,8 @@ timer.Create( "ClassTime", classDuration, 0, function()
 	if (true) then
 		local newClass1 = math.random(0,totalClasses - 1)
 		local newClass2 = math.random(0,totalClasses - 1)
-		while (newClass1 == newClass2) do
+		while (newClass1 == newClass2) 
+		do
 			newClass2 = math.random(0,totalClasses - 1)
 		end
 
@@ -43,7 +44,7 @@ timer.Create( "ClassTime", classDuration, 0, function()
 
 	    for i = 0, 3
 		do
-            local j = randint( 0, i )
+            local j = math.random( 0, i )
 
             -- Swap the elements at positions i and j.
             local temp = a[i]
@@ -55,7 +56,6 @@ timer.Create( "ClassTime", classDuration, 0, function()
 		houseClass[a[1]] = newClass1 
 		houseClass[a[2]] = newClass2 
 		houseClass[a[3]] = newClass2 
-
 		
 		for k,v in pairs(player.GetAll()) do
 			local currentJob = v:getDarkRPVar("job")

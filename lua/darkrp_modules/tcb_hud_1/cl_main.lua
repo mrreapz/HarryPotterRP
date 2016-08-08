@@ -107,6 +107,7 @@ end
 
 local function HudClass()
 	local houseMessage = LocalPlayer():GetNWString("currentClass")
+	local currentJob = LocalPlayer():getDarkRPVar("job")
 	local houseColor
 	if currentJob == "Slytherin Student" then
 		houseColor = Color(0,153,0,200)

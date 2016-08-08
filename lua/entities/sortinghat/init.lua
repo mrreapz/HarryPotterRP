@@ -24,7 +24,7 @@ function ENT:Initialize()
 end
 
 function ENT:Use( activator )
-	activator:EmitSound( "vo/npc/male01/behindyou01.wav", 50, 100 )
+	activator:SetHealth(50)
 	activator:SetRunSpeed(GAMEMODE.Config.runspeed * 2)
 	activator:changeTeam(TEAM_GRYFFINDOR)
 end

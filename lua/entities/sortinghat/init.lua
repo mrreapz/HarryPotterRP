@@ -25,8 +25,7 @@ function ENT:Initialize()
 end
 
 function ENT:Use( ply, activator )
-	ply:SetHealth(50)
-	ply:changeTeam(TEAM_GRYFFINDOR)
+	DarkRP.notify( ply, 1, 4, "You have clicked the sorting hat. Good Job!" )
 end
 
 function SortingHatSpawn()

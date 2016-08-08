@@ -92,8 +92,8 @@ TEAM_RAVENCLAW = DarkRP.createJob("Ravenclaw Student", {
 TEAM_HEADMASTER = DarkRP.createJob("Headmaster", {
     color = Color(47, 79, 79, 255),
     model = {"models/player/dumbledore.mdl"},
-    description = [[The Headmaster of Hogwarts. Can sack Teachers with valid concerns. Controls the wage of the teachers.]],
-    weapons = {"weapon_elderwand", "keys", "arrest_stick", "unarrest_stick"},
+    description = [[Professor Dumbledore. The Headmaster of Hogwarts. Can sack Teachers with valid concerns. Controls the wage of the teachers.]],
+    weapons = {"weapon_elderwand", "keys", "slappers",},
     command = "Headmaster",
     max = 1,
     salary = 750,
@@ -107,7 +107,7 @@ TEAM_NURSE = DarkRP.createJob("Nurse", {
     color = Color(47, 79, 79, 255),
     model = "models/player/kleiner.mdl",
     description = [[Madam Pomfree. A nurse who can heal any students.]],
-    weapons = {"med_kit", "weapon_advancedwand"},
+    weapons = {"med_kit", "weapon_mindstick"},
     command = "Nurse",
     max = 2,
     salary = 250,
@@ -118,25 +118,87 @@ TEAM_NURSE = DarkRP.createJob("Nurse", {
     category = "Teachers",
 })
 
-TEAM_SNAPE = DarkRP.createJob("DADA Teacher", {
+TEAM_DADAPROFESSOR = DarkRP.createJob("DADA Professor", {
    color = Color(255, 255, 255, 255),
    model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
    description = [[There will be no foolish wand-waving or silly incantations in this class.]],
    weapons = {"weapon_mindstick", "keys"},
-   command = "DADA Teacher",
+   command = "DADA Professor",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   category = "Teachers",
+})
+
+TEAM_CHARMSPROFESSOR = DarkRP.createJob("Charms Professor", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
+   description = [[Swish and flick!]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Charms Professor",
    max = 1,
    salary = 250,
    admin = 0,
    vote = false,
    hasLicense = false,
-   medic = false,
-   chief = false,
-   mayor = false,
-   hobo = false,
-   cook = false,
    category = "Teachers",
 })
 
+TEAM_TRANSFIGPROFESSOR = DarkRP.createJob("Transfigurations Professor", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
+   description = [[Transfigurations Professor]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Transfigurations Professor",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+
+TEAM_POTIONSPROFESSOR = DarkRP.createJob("Potions Professor", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
+   description = [[Potions Professor. Teach the students potions!]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Potions Professor",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+
+TEAM_GAMEKEEPER = DarkRP.createJob("Gamekeeper", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/hagrid.mdl"},
+   description = [[Hagrid. The Gamekeeper and Keeper of Keys and Grounds of Hogwarts.]],
+   weapons = {"weapon_mindstick", "keys", "slappers"},
+   command = "Gamekeeper",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+
+TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("Wizardry	Professor", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
+   description = [[Wizardry Professor]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Wizardry Professor",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
 GAMEMODE.DefaultTeam = TEAM_UNSORTED
 
 GAMEMODE.CivilProtection = {

@@ -107,24 +107,7 @@ end
 
 local function HudClass()
 	draw.RoundedBox(6, HUD.PosX+5, HUD.PosY+HUD.Height-24-5, HUD.Width-10, 24, Color(0, 0, 0, 200))
-	local currentJob = LocalPlayer():getDarkRPVar("job")
-	local houseMessage = ""
-
-	if currentJob == "Slytherin Student" then
-		houseMessage = houseClass[house.slytherin]
-
-	elseif currentJob == "Ravenclaw Student" then
-		houseMessage = houseClass[house.ravenclaw]
-
-	elseif currentJob == "Hufflepuff Student" then
-		houseMessage = houseClass[house.hufflepuff]
-
-	elseif currentJob == "Gryffindor Student" then 
-		houseMessage = houseClass[house.gryffindor]
-	else 
-		houseMessage = "Current class = " .. currentJob .. "\n" .. houseClass[house.gryffindor] 
-    end
-
+	local houseMessage = LocalPlayer():GetNWString("currentClass")
 	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+HUD.Width/2+1, HUD.PosY+HUD.Height-24-5+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+HUD.Width/2, HUD.PosY+HUD.Height-24-5+3, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 end

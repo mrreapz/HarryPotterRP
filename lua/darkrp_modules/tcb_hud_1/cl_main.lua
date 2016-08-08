@@ -106,8 +106,25 @@ local function HudBase()
 end
 
 local function HudClass()
-	draw.RoundedBox(6, HUD.PosX+5, HUD.PosY+HUD.Height-24-5, HUD.Width-10, 24, Color(0, 0, 0, 200))
 	local houseMessage = LocalPlayer():GetNWString("currentClass")
+	local houseColor
+	if currentJob == "Slytherin Student" then
+		houseColor = Color(0,153,0,200)
+
+	elseif currentJob == "Ravenclaw Student" then
+		houseColor = Color(51,51,255,200)
+
+	elseif currentJob == "Hufflepuff Student" then
+		houseColor = Color(204,163,0,200)
+
+	elseif currentJob == "Gryffindor Student" then 
+		houseColor = Color(204,0,0,200)
+
+	else 
+		houseColor = Color(153,51,153,200)
+
+	end
+	draw.RoundedBox(6, HUD.PosX+5, HUD.PosY+HUD.Height-24-5, HUD.Width-10, 24, houseColor)
 	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+HUD.Width/2+1, HUD.PosY+HUD.Height-24-5+3+1, Color(0, 0, 0, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 	draw.DrawText(houseMessage, "TCBFont", HUD.PosX+HUD.Width/2, HUD.PosY+HUD.Height-24-5+3, Color(255, 255, 255, 255), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
 end

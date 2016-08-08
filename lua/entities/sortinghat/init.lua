@@ -28,10 +28,5 @@ function ENT:Use( activator )
 		activator:EmitSound( "oasisrp/soda/slurp.wav", 50, 100 )
 	end )
 
-	activator:SwitchJob()
-end
-
-
-function Team()
-	return TEAM_GRYFFINDOR
+	activator:changeTeam(TEAM_GRYFFINDOR)
 end

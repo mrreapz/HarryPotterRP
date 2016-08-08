@@ -41,7 +41,7 @@ timer.Create( "ClassTime", classDuration, 0, function()
 		a[2] = house.hufflepuff
 		a[3] = house.ravenclaw
 
-	    for i = 0, 3, +1 
+	    for i = 0, 3
 		do
             local j = randint( 0, i )
 
@@ -55,7 +55,7 @@ timer.Create( "ClassTime", classDuration, 0, function()
 		houseClass[a[0]] = newClass1 
 		houseClass[a[1]] = newClass1 
 		houseClass[a[2]] = newClass2 
-		houseClass[a[3]] = newClass2
+		houseClass[a[3]] = newClass2 
 
 		
 		for k,v in pairs(player.GetAll()) do

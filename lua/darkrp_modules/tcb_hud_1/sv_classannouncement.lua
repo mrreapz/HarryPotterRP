@@ -49,7 +49,6 @@ timer.Create( "ClassTime", classDuration, 0, function()
             local temp = a[i]
             a[i] = a[j]
             a[j] = temp
-			i += 1
         end
 
 		houseClass[a[0]] = newClass1 

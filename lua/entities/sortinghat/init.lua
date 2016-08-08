@@ -24,9 +24,9 @@ function ENT:Initialize()
 end
 
 function ENT:Use( activator )
-	timer.Simple( 0, function()
-		activator:EmitSound( "oasisrp/soda/slurp.wav", 50, 100 )
-	end )
+	--timer.Simple( 0, function()
+	--	activator:EmitSound( "oasisrp/soda/slurp.wav", 50, 100 )
+	--end )
 
 	activator:changeTeam(TEAM_GRYFFINDOR)
 end

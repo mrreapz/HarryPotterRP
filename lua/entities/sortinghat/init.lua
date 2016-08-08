@@ -30,7 +30,7 @@ function ENT:Use( ply, activator )
 end
 
 function SortingHatSpawn()
-	local shSpawn = vm.config.mapspawn[ game.GetMap() ]
+	local shSpawn = shat.config.mapspawn[ game.GetMap() ]
 	
 	for k, v in pairs( shSpawn ) do
 		local sortinghat = ents.Create( "sortinghat" )

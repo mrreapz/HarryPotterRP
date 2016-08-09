@@ -24,8 +24,8 @@ function ENT:Initialize()
 	end
 end
 
-function ENT:Use( ply, activator )
-	DarkRP.notify( ply, 1, 4, "You have clicked the sorting hat. Good Job!" )
+function ENT:Use( activator, caller )
+	DarkRP.notify( activator, 1, 4, "You have clicked the sorting hat. Good Job!" )
 end
 
 function SortingHatSpawn()
@@ -37,6 +37,7 @@ function SortingHatSpawn()
 		sortinghat:SetAngles( v.ang )
 		sortinghat:SetMoveType( MOVETYPE_NONE )
 		sortinghat:Spawn()
+		sortinghat:Activate()
 	end
 end
 

@@ -11,7 +11,8 @@ AddCSLuaFile( "cl_init.lua" )
 include( "shared.lua" )
 
 function ENT:Initialize()
-	self:SetModel("models/half-dead/wizards/hat_01.mdl")
+	--self:SetModel("models/half-dead/wizards/hat_01.mdl")
+	self:SetModel("models/hunter/blocks/cube025x025x025.mdl")
 	self:PhysicsInit( SOLID_VPHYSICS )
 	self:SetMoveType( MOVETYPE_VPHYSICS )
 	self:SetSolid( SOLID_VPHYSICS )
@@ -26,6 +27,7 @@ function ENT:Initialize()
 end
 
 function ENT:Use( activator, caller )
+	Msg("Active : "..activator:GetName().."\n");
 	print("Success!!!")
 	activator:SetDarkRPVar( "money", 500 )
 end

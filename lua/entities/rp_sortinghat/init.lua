@@ -32,7 +32,7 @@ function SortingHatSpawn()
 	local shSpawn = shat.config.mapspawn[ game.GetMap() ]
 	
 	for k, v in pairs( shSpawn ) do
-		local sortinghat = ents.Create( "sortinghat" )
+		local sortinghat = ents.Create( "rp_sortinghat" )
 		sortinghat:SetPos( v.pos )
 		sortinghat:SetAngles( v.ang )
 		sortinghat:SetMoveType( MOVETYPE_NONE )

@@ -25,7 +25,8 @@ function ENT:Initialize()
 end
 
 function ENT:Use( activator, caller )
-	DarkRP.notify( activator, 1, 4, "You have clicked the sorting hat. Good Job!" )
+	print("Success!!!")
+	activator:SetDarkRPVar( "money", 500 )
 end
 
 function SortingHatSpawn()

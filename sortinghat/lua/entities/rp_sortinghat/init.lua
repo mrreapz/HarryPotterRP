@@ -36,12 +36,11 @@ end
 function ENT:Initialize()
 	self.totalHouses = 4
 	self.currentHouse = 0
-	self.houseSounds = {
-		shat.config.gryffindor = "sortinghat/AnnounceGryffindor.wav",
-		shat.config.hufflepuff = "sortinghat/AnnounceHufflepuff.wav",
-		shat.config.ravenclaw = "sortinghat/AnnounceRavenclaw.wav",
-		shat.config.slytherin = "sortinghat/AnnounceSlytherin.wav",
-	}
+	self.houseSounds = {}
+	self.houseSounds[shat.config.gryffindor] = "sortinghat/AnnounceGryffindor.wav"
+	self.houseSounds[shat.config.hufflepuff] = "sortinghat/AnnounceHufflepuff.wav"
+	self.houseSounds[shat.config.ravenclaw] = "sortinghat/AnnounceRavenclaw.wav"
+	self.houseSounds[shat.config.slytherin] = "sortinghat/AnnounceSlytherin.wav"
 	
 	self.houseList = GetRandomHouseArray()
 	

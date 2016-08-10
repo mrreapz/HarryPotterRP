@@ -62,7 +62,7 @@ timer.Create( "ClassTime", classDuration, 0, function()
 		elseif currentJob == TEAM_RAVENCLAW then 
 			v:SetNWString("currentClass", houseClass[TEAM_RAVENCLAW])
 
-		if currentJob == professor[class[newClass1]] then
+		elseif currentJob == professor[class[newClass1]] then
 			v:SetNwString("currentClass", "Your class has begun: " .. class[newClass1])
 
 		elseif currentJob == professor[class[newClass2]] then

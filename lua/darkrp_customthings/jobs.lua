@@ -34,7 +34,7 @@ TEAM_UNSORTED = DarkRP.createJob("Unsorted", {
 })
 
 TEAM_GRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
-    color = Color(196, 45, 45, 255),
+    color = Color(204,0,0,200),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Gryffindor Student.]],
     weapons = defaultStudentGear,
@@ -48,7 +48,7 @@ TEAM_GRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
 })
 
 TEAM_SLYTHERIN = DarkRP.createJob("Slytherin Student", {
-    color = Color(33, 203, 55, 255),
+    color = Color(0,153,0,200),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Slytherin Student.]],
     weapons = defaultStudentGear,
@@ -62,7 +62,7 @@ TEAM_SLYTHERIN = DarkRP.createJob("Slytherin Student", {
 })
 
 TEAM_HUFFLEPUFF = DarkRP.createJob("Hufflepuff Student", {
-    color = Color(255, 213, 0, 255),
+    color = Color(204,163,0,200),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Hufflepuff Student.]],
     weapons = defaultStudentGear,
@@ -76,7 +76,7 @@ TEAM_HUFFLEPUFF = DarkRP.createJob("Hufflepuff Student", {
 })
 
 TEAM_RAVENCLAW = DarkRP.createJob("Ravenclaw Student", {
-    color = Color(0, 119, 225, 255),
+    color = Color(51,51,255,200),
     model = {"models/player/lordsaw_fps/2serdaiglev1.mdl", "models/player/lordsaw_fps/1poufsouflev1.mdl", "models/player/lordsaw_fps/2poufsouflev1_lod.mdl", "models/player/lordsaw_fps/3poufsouflev1_lod.mdl", "models/player/lordsaw_fps/1serdaiglev1_lod.mdl", "models/player/lordsaw_fps/4poufsouflegirl_lod.mdl", "models/player/lordsaw_fps/4serdaiglegirl_lod.mdl"},
     description = [[Ravenclaw Student.]],
     weapons = defaultStudentGear,

@@ -9,7 +9,11 @@
 include("darkrp_config/sortinghat_settings.lua")
 
 -- Do not edit below this point.
---resource.AddFile( "sound/oasisrp/soda/slurp.wav" )
+
+resource.AddFile( "sound/sortinghat/AnnounceGryffindor.wav" )
+resource.AddFile( "sound/sortinghat/AnnounceHufflepuff.wav" )
+resource.AddFile( "sound/sortinghat/AnnounceRavenclaw.wav" )
+resource.AddFile( "sound/sortinghat/AnnounceSlytherin.wav" )
 
 -- debug
 MsgC( Color( 0, 216, 255 ), "Sorting hat loaded." )

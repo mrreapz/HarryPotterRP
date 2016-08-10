@@ -1,4 +1,4 @@
-include("darkrp_customthings/jobs.lua")
+include("darkrp_customthings/professions.lua")
 
 math.randomseed(os.time())
 

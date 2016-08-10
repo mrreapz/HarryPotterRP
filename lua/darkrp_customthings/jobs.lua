@@ -17,6 +17,8 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 
 Add jobs under the following line:
 ---------------------------------------------------------------------------]]
+include( "professions.lua" )
+
 local defaultStudentGear = {"weapon_hpmstick", "keys"}
 
 TEAM_UNSORTED = DarkRP.createJob("Unsorted", {

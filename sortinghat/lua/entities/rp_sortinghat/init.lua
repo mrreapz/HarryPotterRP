@@ -71,7 +71,7 @@ function ENT:Use( activator, caller )
 		local house = self.houseList[self.currentHouse]
 		self.currentHouse = self.currentHouse + 1
 		if self.currentHouse >= self.totalHouses then
-			self.currentHouse == 0
+			self.currentHouse = 0
 			self.houseList = GetRandomHouseArray()
 		end
 

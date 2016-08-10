@@ -37,6 +37,27 @@ houseClass[GetGlobalInt("TEAM_RAVENCLAW")] = ""
 
 local classDuration = 30
 
+local function GetRandomHouseArray()
+	local a = {}
+
+	a[0] = houses.TEAM_SLYTHERIN
+	a[1] = houses.TEAM_GRYFFINDOR
+	a[2] = houses.TEAM_HUFFLEPUFF
+	a[3] = houses.TEAM_RAVENCLAW
+
+	for i = 0, 3
+	do
+		local j = math.random( 0, i )
+
+		-- Swap the elements at positions i and j.
+		local temp = a[i]
+		a[i] = a[j]
+		a[j] = temp
+	end
+
+	return a
+end
+
 timer.Create( "ClassTime", classDuration, 0, function()
 	local newClass1 = math.random(0,totalClasses - 1)
 	local newClass2 = math.random(0,totalClasses - 1)
@@ -81,24 +102,3 @@ timer.Create( "ClassTime", classDuration, 0, function()
 		DarkRP.notify(v,0,4,"Class is over, please make your way to your next class")			
 	end
 end)
-
-local function GetRandomHouseArray()
-	local a = {}
-
-	a[0] = houses.TEAM_SLYTHERIN
-	a[1] = houses.TEAM_GRYFFINDOR
-	a[2] = houses.TEAM_HUFFLEPUFF
-	a[3] = houses.TEAM_RAVENCLAW
-
-	for i = 0, 3
-	do
-		local j = math.random( 0, i )
-
-		-- Swap the elements at positions i and j.
-		local temp = a[i]
-		a[i] = a[j]
-		a[j] = temp
-	end
-
-	return a
-end

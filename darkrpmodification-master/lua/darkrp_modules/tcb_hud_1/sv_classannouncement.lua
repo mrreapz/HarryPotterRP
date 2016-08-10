@@ -1,5 +1,3 @@
-include("darkrp_customthings/professions.lua")
-
 math.randomseed(os.time())
 
 class = {}

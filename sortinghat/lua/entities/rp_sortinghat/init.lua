@@ -69,7 +69,7 @@ function ENT:Use( activator, caller )
 		util.Effect("Sparks", effectdata)
 
 		local house = self.houseList[self.currentHouse]
-		self.currentHouse += 1
+		self.currentHouse = self.currentHouse + 1
 		if self.currentHouse >= self.totalHouses then
 			self.currentHouse == 0
 			self.houseList = GetRandomHouseArray()

@@ -188,7 +188,7 @@ TEAM_GAMEKEEPER = DarkRP.createJob("Gamekeeper", {
 
 TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("Wizardry	Professor", {
    color = Color(255, 255, 255, 255),
-   model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
+   model = {"models/obese_male.mdl"},
    description = [[Wizardry Professor]],
    weapons = {"weapon_mindstick", "keys"},
    command = "Wizardry Professor",
@@ -199,6 +199,64 @@ TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("Wizardry	Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+
+TEAM_MUGGLEPROFESSOR = DarkRP.createJob("Muggle Studies Professor", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/obese_male.mdl"},
+   description = [[Muggle Studies Professor]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Muggle Studies Professor",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+
+TEAM_HERBOLOGYPROFESSOR = DarkRP.createJob("Herbology Professor", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/obese_male.mdl"},
+   description = [[Herbology Professor]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Herbology Professor",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+
+TEAM_ASTRONOMYPROFESSOR = DarkRP.createJob("Astronomy Professor", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/obese_male.mdl"},
+   description = [[Astronomy Professor]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Astronomy Professor",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+
+TEAM_QUIDDITCHCOACH = DarkRP.createJob("Quidditch Coach", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/obese_male.mdl"},
+   description = [[Quidditch Professor]],
+   weapons = {"weapon_mindstick", "keys"},
+   command = "Quiditch Coach",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+
+
 GAMEMODE.DefaultTeam = TEAM_UNSORTED
 
 GAMEMODE.CivilProtection = {

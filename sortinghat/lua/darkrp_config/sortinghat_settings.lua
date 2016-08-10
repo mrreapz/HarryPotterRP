@@ -9,12 +9,12 @@
 AddCSLuaFile()
 shat = shat or {}
 shat.config = {}
-houses = team.GetAllTeams()
-shat.config.unsorted = houses.UNSORTED
-shat.config.gryffindor = houses.TEAM_GRYFFINDOR
-shat.config.slytherin = houses.TEAM_SLYTHERIN
-shat.config.hufflepuff = houses.TEAM_HUFFLEPUFF
-shat.config.ravenclaw = houses.TEAM_RAVENCLAW
+
+shat.config.unsorted = GetGlobalInt("TEAM_UNSORTED")
+shat.config.gryffindor = GetGlobalInt("TEAM_GRYFFINDOR")
+shat.config.slytherin = GetGlobalInt("TEAM_SLYTHERIN")
+shat.config.hufflepuff = GetGlobalInt("TEAM_HUFFLEPUFF")
+shat.config.ravenclaw = GetGlobalInt("TEAM_RAVENCLAW")
 shat.config.mapspawn = {}
 -- configuration
 

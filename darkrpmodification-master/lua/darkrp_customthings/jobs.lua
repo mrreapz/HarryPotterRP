@@ -17,7 +17,6 @@ http://wiki.darkrp.com/index.php/DarkRP:CustomJobFields
 
 Add jobs under the following line:
 ---------------------------------------------------------------------------]]
-include( "professions.lua" )
 
 local defaultStudentGear = {"weapon_hpmstick", "keys"}
 
@@ -34,6 +33,7 @@ TEAM_UNSORTED = DarkRP.createJob("Unsorted", {
     hasLicense = false,
 	category = "Unsorted",
 })
+SetGlobalInt("TEAM_UNSORTED", TEAM_UNSORTED)
 
 TEAM_GRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
     color = Color(204,0,0,200),
@@ -48,6 +48,7 @@ TEAM_GRYFFINDOR = DarkRP.createJob("Gryffindor Student", {
     hasLicense = false,
 	category = "Gryffindor",
 })
+SetGlobalInt("TEAM_GRYFFINDOR", TEAM_GRYFFINDOR)
 
 TEAM_SLYTHERIN = DarkRP.createJob("Slytherin Student", {
     color = Color(0,153,0,200),
@@ -62,6 +63,7 @@ TEAM_SLYTHERIN = DarkRP.createJob("Slytherin Student", {
     hasLicense = false,
 	category = "Slytherin",
 })
+SetGlobalInt("TEAM_SLYTHERIN", TEAM_SLYTHERIN)
 
 TEAM_HUFFLEPUFF = DarkRP.createJob("Hufflepuff Student", {
     color = Color(204,163,0,200),
@@ -76,6 +78,7 @@ TEAM_HUFFLEPUFF = DarkRP.createJob("Hufflepuff Student", {
     hasLicense = false,
 	category = "Hufflepuff",
 })
+SetGlobalInt("TEAM_HUFFLEPUFF", TEAM_HUFFLEPUFF)
 
 TEAM_RAVENCLAW = DarkRP.createJob("Ravenclaw Student", {
     color = Color(51,51,255,200),
@@ -90,6 +93,7 @@ TEAM_RAVENCLAW = DarkRP.createJob("Ravenclaw Student", {
     hasLicense = false,
 	category = "Ravenclaw",
 })
+SetGlobalInt("TEAM_RAVENCLAW", TEAM_RAVENCLAW)
 
 TEAM_HEADMASTER = DarkRP.createJob("Headmaster", {
     color = Color(47, 79, 79, 255),
@@ -104,6 +108,7 @@ TEAM_HEADMASTER = DarkRP.createJob("Headmaster", {
     hasLicense = false,
 	category = "Teachers",
 })
+SetGlobalInt("TEAM_HEADMASTER", TEAM_HEADMASTER)
 
 TEAM_NURSE = DarkRP.createJob("Nurse", {
     color = Color(47, 79, 79, 255),
@@ -119,6 +124,7 @@ TEAM_NURSE = DarkRP.createJob("Nurse", {
     medic = true,
     category = "Teachers",
 })
+SetGlobalInt("TEAM_NURSE", TEAM_NURSE)
 
 TEAM_DADAPROFESSOR = DarkRP.createJob("DADA Professor", {
    color = Color(255, 255, 255, 255),
@@ -131,6 +137,7 @@ TEAM_DADAPROFESSOR = DarkRP.createJob("DADA Professor", {
    admin = 0,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_DADAPROFESSOR", TEAM_DADAPROFESSOR)
 
 TEAM_CHARMSPROFESSOR = DarkRP.createJob("Charms Professor", {
    color = Color(255, 255, 255, 255),
@@ -145,6 +152,7 @@ TEAM_CHARMSPROFESSOR = DarkRP.createJob("Charms Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_CHARMSPROFESSOR", TEAM_CHARMSPROFESSOR)
 
 TEAM_TRANSFIGPROFESSOR = DarkRP.createJob("Transfigurations Professor", {
    color = Color(255, 255, 255, 255),
@@ -159,6 +167,7 @@ TEAM_TRANSFIGPROFESSOR = DarkRP.createJob("Transfigurations Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_TRANSFIGPROFESSOR", TEAM_TRANSFIGPROFESSOR)
 
 TEAM_POTIONSPROFESSOR = DarkRP.createJob("Potions Professor", {
    color = Color(255, 255, 255, 255),
@@ -173,6 +182,7 @@ TEAM_POTIONSPROFESSOR = DarkRP.createJob("Potions Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_POTIONSPROFESSOR", TEAM_POTIONSPROFESSOR)
 
 TEAM_GAMEKEEPER = DarkRP.createJob("Gamekeeper", {
    color = Color(255, 255, 255, 255),
@@ -187,6 +197,7 @@ TEAM_GAMEKEEPER = DarkRP.createJob("Gamekeeper", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_GAMEKEEPER", TEAM_GAMEKEEPER)
 
 TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("Wizardry	Professor", {
    color = Color(255, 255, 255, 255),
@@ -201,6 +212,7 @@ TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("Wizardry	Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_WIZARDRYPROFESSOR", TEAM_WIZARDRYPROFESSOR)
 
 TEAM_MUGGLEPROFESSOR = DarkRP.createJob("Muggle Studies Professor", {
    color = Color(255, 255, 255, 255),
@@ -215,6 +227,7 @@ TEAM_MUGGLEPROFESSOR = DarkRP.createJob("Muggle Studies Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_MUGGLEPROFESSOR", TEAM_MUGGLEPROFESSOR)
 
 TEAM_HERBOLOGYPROFESSOR = DarkRP.createJob("Herbology Professor", {
    color = Color(255, 255, 255, 255),
@@ -229,6 +242,7 @@ TEAM_HERBOLOGYPROFESSOR = DarkRP.createJob("Herbology Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_HERBOLOGYPROFESSOR", TEAM_HERBOLOGYPROFESSOR)
 
 TEAM_ASTRONOMYPROFESSOR = DarkRP.createJob("Astronomy Professor", {
    color = Color(255, 255, 255, 255),
@@ -243,6 +257,7 @@ TEAM_ASTRONOMYPROFESSOR = DarkRP.createJob("Astronomy Professor", {
    hasLicense = false,
    category = "Teachers",
 })
+SetGlobalInt("TEAM_ASTRONOMYPROFESSOR", TEAM_ASTRONOMYPROFESSOR)
 
 TEAM_QUIDDITCHCOACH = DarkRP.createJob("Quidditch Coach", {
    color = Color(255, 255, 255, 255),
@@ -257,7 +272,7 @@ TEAM_QUIDDITCHCOACH = DarkRP.createJob("Quidditch Coach", {
    hasLicense = false,
    category = "Teachers",
 })
-
+SetGlobalInt("TEAM_QUIDDITCHCOACH", TEAM_QUIDDITCHCOACH)
 
 GAMEMODE.DefaultTeam = TEAM_UNSORTED
 

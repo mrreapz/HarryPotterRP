@@ -1,4 +1,3 @@
-
 math.randomseed(os.time())
 
 class = {}
@@ -14,22 +13,27 @@ class[7] = "Break Time!"
 
 totalClasses = 8 --classes are 0 based, meaning this number will be 1 more than the last class index
 
+houses = {}
+houses.TEAM_GRYFFINDOR = GetGlobalInt("TEAM_GRYFFINDOR")
+houses.TEAM_SLYTHERIN = GetGlobalInt("TEAM_SLYTHERIN")
+houses.TEAM_HUFFLEPUFF = GetGlobalInt("TEAM_HUFFLEPUFF")
+houses.TEAM_RAVENCLAW = GetGlobalInt("TEAM_RAVENCLAW")
+
 professor = {}
-houses = loadfile("darkrp_customthings/jobs.lua")
-professor[class[0]] = houses.TEAM_DADA
-professor[class[1]] = houses.TEAM_CHARMSPROFESSOR
-professor[class[2]] = houses.TEAM_POTIONSPROFESSOR
-professor[class[3]] = houses.TEAM_TRANSFIGPROFESSOR
-professor[class[4]] = houses.TEAM_GAMEKEEPER
-professor[class[5]] = houses.TEAM_CHARMSPROFESSOR
-professor[class[6]] = houses.TEAM_WIZARDRYPROFESSOR
+professor[class[0]] = GetGlobalInt("TEAM_DADAPROFESSOR")
+professor[class[1]] = GetGlobalInt("TEAM_CHARMSPROFESSOR")
+professor[class[2]] = GetGlobalInt("TEAM_POTIONSPROFESSOR")
+professor[class[3]] = GetGlobalInt("TEAM_TRANSFIGPROFESSOR")
+professor[class[4]] = GetGlobalInt("TEAM_GAMEKEEPER")
+professor[class[5]] = GetGlobalInt("TEAM_CHARMSPROFESSOR")
+professor[class[6]] = GetGlobalInt("TEAM_WIZARDRYPROFESSOR")
 professor[class[7]] = nil
 
 houseClass = {}
-houseClass[houses.TEAM_SLYTHERIN] = ""
-houseClass[houses.TEAM_GRYFFINDOR] = ""
-houseClass[houses.TEAM_HUFFLEPUFF] = ""
-houseClass[houses.TEAM_RAVENCLAW] = ""
+houseClass[GetGlobalInt("TEAM_SLYTHERIN")] = ""
+houseClass[GetGlobalInt("TEAM_GRYFFINDOR") = ""
+houseClass[GetGlobalInt("TEAM_HUFFLEPUFF")] = ""
+houseClass[GetGlobalInt("TEAM_RAVENCLAW")] = ""
 
 local classDuration = 30
 

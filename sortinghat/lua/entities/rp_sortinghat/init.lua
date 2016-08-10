@@ -9,14 +9,15 @@
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include( "shared.lua" )
+include("darkrp_config/sortinghat_settings.lua")
 
 local function GetRandomHouseArray()
 	local a = {}
 
-	a[0] = TEAM_SLYTHERIN
-	a[1] = TEAM_GRYFFINDOR
-	a[2] = TEAM_HUFFLEPUFF
-	a[3] = TEAM_RAVENCLAW
+	a[0] = shat.config.slytherin
+	a[1] = shat.config.gryffindor
+	a[2] = shat.config.hufflepuff
+	a[3] = shat.config.ravenclaw
 
 	for i = 0, 3
 	do
@@ -36,10 +37,10 @@ function ENT:Initialize()
 	self.totalHouses = 4
 	self.currentHouse = 0
 	self.houseSounds = {
-		TEAM_GRYFFINDOR = "sortinghat/AnnounceGryffindor.wav",
-		TEAM_HUFFLEPUFF = "sortinghat/AnnounceHufflepuff.wav",
-		TEAM_RAVENCLAW = "sortinghat/AnnounceRavenclaw.wav",
-		TEAM_SLYTHERIN = "sortinghat/AnnounceSlytherin.wav"
+		shat.config.gryffindor = "sortinghat/AnnounceGryffindor.wav",
+		shat.config.hufflepuff = "sortinghat/AnnounceHufflepuff.wav",
+		shat.config.ravenclaw = "sortinghat/AnnounceRavenclaw.wav",
+		shat.config.slytherin = "sortinghat/AnnounceSlytherin.wav"
 	}
 	self.houseList = GetRandomHouseArray()
 	

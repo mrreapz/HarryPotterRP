@@ -9,6 +9,12 @@
 AddCSLuaFile()
 shat = shat or {}
 shat.config = {}
+houses = team.GetAllTeams()
+shat.config.unsorted = houses.UNSORTED
+shat.config.gryffindor = houses.TEAM_GRYFFINDOR
+shat.config.slytherin = houses.TEAM_SLYTHERIN
+shat.config.hufflepuff = houses.TEAM_HUFFLEPUFF
+shat.config.ravenclaw = houses.TEAM_RAVENCLAW
 shat.config.mapspawn = {}
 -- configuration
 

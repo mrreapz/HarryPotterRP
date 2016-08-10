@@ -9,6 +9,7 @@
 AddCSLuaFile( "shared.lua" )
 AddCSLuaFile( "cl_init.lua" )
 include( "shared.lua" )
+include("darkrp_customthings/jobs.lua")
 
 local function GetRandomHouseArray()
 	local a = {}

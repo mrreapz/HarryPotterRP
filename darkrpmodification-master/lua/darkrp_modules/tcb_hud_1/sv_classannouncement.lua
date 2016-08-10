@@ -15,7 +15,7 @@ class[7] = "Break Time!"
 totalClasses = 8 --classes are 0 based, meaning this number will be 1 more than the last class index
 
 professor = {}
-houses = include("darkrp_customthings/jobs.lua")
+houses = loadfile("darkrp_customthings/jobs.lua")
 professor[class[0]] = houses.TEAM_DADA
 professor[class[1]] = houses.TEAM_CHARMSPROFESSOR
 professor[class[2]] = houses.TEAM_POTIONSPROFESSOR

@@ -2,7 +2,7 @@ math.randomseed(os.time())
 
 class = {}
 
-class[0] = "DAtDA"
+class[0] = "DADA"
 class[1] = "Herbology"
 class[2] = "Potions"
 class[3] = "Transfiguration"
@@ -31,7 +31,7 @@ professor[class[7]] = nil
 
 houseClass = {}
 houseClass[GetGlobalInt("TEAM_SLYTHERIN")] = ""
-houseClass[GetGlobalInt("TEAM_GRYFFINDOR") = ""
+houseClass[GetGlobalInt("TEAM_GRYFFINDOR")] = ""
 houseClass[GetGlobalInt("TEAM_HUFFLEPUFF")] = ""
 houseClass[GetGlobalInt("TEAM_RAVENCLAW")] = ""
 

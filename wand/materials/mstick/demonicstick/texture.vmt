@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "mstick/demonicstick/texture"
+	"$surfaceprop" "wood"
+	"$model" 1
+}

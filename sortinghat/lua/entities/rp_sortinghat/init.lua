@@ -40,8 +40,9 @@ function ENT:Initialize()
 		shat.config.gryffindor = "sortinghat/AnnounceGryffindor.wav",
 		shat.config.hufflepuff = "sortinghat/AnnounceHufflepuff.wav",
 		shat.config.ravenclaw = "sortinghat/AnnounceRavenclaw.wav",
-		shat.config.slytherin = "sortinghat/AnnounceSlytherin.wav"
+		shat.config.slytherin = "sortinghat/AnnounceSlytherin.wav",
 	}
+	
 	self.houseList = GetRandomHouseArray()
 	
 	self:SetModel("models/half-dead/wizards/hat_01.mdl")

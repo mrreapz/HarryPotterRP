@@ -75,7 +75,7 @@ function ENT:Use( activator, caller )
 		end
 
 		self:EmitSound(self.houseSounds[house])
-		activator:ChangeTeam(house, true)
+		activator:changeTeam(house, true)
 	end
 end
 

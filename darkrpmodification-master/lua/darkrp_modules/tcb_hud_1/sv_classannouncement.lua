@@ -67,10 +67,10 @@ timer.Create( "ClassTime", classDuration, 0, function()
 
 	a = GetRandomHouseArray()
 
-	houseClass[a[0]] = newClass1 
-	houseClass[a[1]] = newClass1 
-	houseClass[a[2]] = newClass2 
-	houseClass[a[3]] = newClass2 
+	houseClass[a[0]] = class[newClass1] 
+	houseClass[a[1]] = class[newClass1] 
+	houseClass[a[2]] = class[newClass2] 
+	houseClass[a[3]] = class[newClass2] 
 	
 	for k,v in pairs(player.GetAll()) do
 		local currentJob = v:Team()

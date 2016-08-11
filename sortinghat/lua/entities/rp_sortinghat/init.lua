@@ -43,8 +43,8 @@ function ENT:Initialize()
 	
 	self.houseList = GetRandomHouseArray()
 	
-	self:SetModel("models/half-dead/wizards/hat_01.mdl")
-	--self:SetModel("models/hunter/blocks/cube025x025x025.mdl")
+	--self:SetModel("models/half-dead/wizards/hat_01.mdl")
+	self:SetModel("models/hunter/blocks/cube025x025x025.mdl")
 	self:PhysicsInit( SOLID_VPHYSICS )
 	self:SetMoveType( MOVETYPE_VPHYSICS )
 	self:SetSolid( SOLID_VPHYSICS )
@@ -74,7 +74,7 @@ function ENT:Use( activator, caller )
 			self.houseList = GetRandomHouseArray()
 		end
 
-		ENT:EmitSound(self.houseSounds[house])
+		self:EmitSound(self.houseSounds[house])
 		activator:ChangeTeam(house, true)
 	end
 end

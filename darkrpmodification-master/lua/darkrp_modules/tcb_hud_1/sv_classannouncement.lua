@@ -95,7 +95,7 @@ timer.Create( "ClassTime", classDuration, 0, function()
 			v:SetNwString("currentClass", "Your class has begun: " .. class[newClass2])
 
 		else 
-			Msg("current : ".. currentJob .."\n" ..
+			print("current : ".. currentJob .."\n" ..
 				"g: " .. houses.TEAM_GRYFFINDOR .. "\n"..
 				"s: " .. houses.TEAM_SLYTHERIN .. "\n"..
 				"h: " .. houses.TEAM_HUFFLEPUFF .. "\n"..

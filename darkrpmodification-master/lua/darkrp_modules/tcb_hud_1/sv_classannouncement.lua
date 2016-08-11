@@ -13,11 +13,10 @@ class[7] = "Break Time!"
 
 totalClasses = 8 --classes are 0 based, meaning this number will be 1 more than the last class index
 
-houses = {}
-houses.TEAM_GRYFFINDOR = GetGlobalInt("TEAM_GRYFFINDOR")
-houses.TEAM_SLYTHERIN = GetGlobalInt("TEAM_SLYTHERIN")
-houses.TEAM_HUFFLEPUFF = GetGlobalInt("TEAM_HUFFLEPUFF")
-houses.TEAM_RAVENCLAW = GetGlobalInt("TEAM_RAVENCLAW")
+TEAM_GRYFFINDOR = GetGlobalInt("TEAM_GRYFFINDOR")
+TEAM_SLYTHERIN = GetGlobalInt("TEAM_SLYTHERIN")
+TEAM_HUFFLEPUFF = GetGlobalInt("TEAM_HUFFLEPUFF")
+TEAM_RAVENCLAW = GetGlobalInt("TEAM_RAVENCLAW")
 
 professor = {}
 professor[class[0]] = GetGlobalInt("TEAM_DADAPROFESSOR")
@@ -40,10 +39,10 @@ local classDuration = 30
 local function GetRandomHouseArray()
 	local a = {}
 
-	a[0] = houses.TEAM_SLYTHERIN
-	a[1] = houses.TEAM_GRYFFINDOR
-	a[2] = houses.TEAM_HUFFLEPUFF
-	a[3] = houses.TEAM_RAVENCLAW
+	a[0] = TEAM_SLYTHERIN
+	a[1] = TEAM_GRYFFINDOR
+	a[2] = TEAM_HUFFLEPUFF
+	a[3] = TEAM_RAVENCLAW
 
 	for i = 0, 3
 	do
@@ -76,17 +75,17 @@ timer.Create( "ClassTime", classDuration, 0, function()
 	for k,v in pairs(player.GetAll()) do
 		local currentJob = v:Team()
 
-		if currentJob == houses.TEAM_SLYTHERIN then
-			v:SetNWString("currentClass", houseClass[houses.TEAM_SLYTHERIN])
+		if currentJob == TEAM_SLYTHERIN then
+			v:SetNWString("currentClass", houseClass[TEAM_SLYTHERIN])
 			
-		elseif currentJob == houses.TEAM_GRYFFINDOR then
-			v:SetNWString("currentClass", houseClass[houses.TEAM_GRYFFINDOR])
+		elseif currentJob == TEAM_GRYFFINDOR then
+			v:SetNWString("currentClass", houseClass[TEAM_GRYFFINDOR])
 
-		elseif currentJob == houses.TEAM_HUFFLEPUFF then
-			v:SetNWString("currentClass", houseClass[houses.TEAM_HUFFLEPUFF])
+		elseif currentJob == TEAM_HUFFLEPUFF then
+			v:SetNWString("currentClass", houseClass[TEAM_HUFFLEPUFF])
 
-		elseif currentJob == houses.TEAM_RAVENCLAW then 
-			v:SetNWString("currentClass", houseClass[houses.TEAM_RAVENCLAW])
+		elseif currentJob == TEAM_RAVENCLAW then 
+			v:SetNWString("currentClass", houseClass[TEAM_RAVENCLAW])
 
 		elseif currentJob == professor[class[newClass1]] then
 			v:SetNwString("currentClass", "Your class has begun: " .. class[newClass1])
@@ -96,10 +95,10 @@ timer.Create( "ClassTime", classDuration, 0, function()
 
 		else 
 			print("current : ".. currentJob .."\n" ..
-				"g: " .. houses.TEAM_GRYFFINDOR .. "\n"..
-				"s: " .. houses.TEAM_SLYTHERIN .. "\n"..
-				"h: " .. houses.TEAM_HUFFLEPUFF .. "\n"..
-				"r: " .. houses.TEAM_RAVENCLAW .. "\n");
+				"g: " .. TEAM_GRYFFINDOR .. "\n"..
+				"s: " .. TEAM_SLYTHERIN .. "\n"..
+				"h: " .. TEAM_HUFFLEPUFF .. "\n"..
+				"r: " .. TEAM_RAVENCLAW .. "\n");
 			v:SetNWString("currentClass", "No Classes")
 
 		end

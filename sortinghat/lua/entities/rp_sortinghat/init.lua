@@ -59,7 +59,7 @@ function ENT:Initialize()
 end
 
 function ENT:Use( activator, caller )
-	if (activator:GetDarkRPVar( "job" ) == "Unsorted") then
+	if (activator:getDarkRPVar( "job" ) == "Unsorted") then
 		local effectdata = EffectData()
 		effectdata:SetOrigin(self:GetPos())
 		effectdata:SetMagnitude(1)

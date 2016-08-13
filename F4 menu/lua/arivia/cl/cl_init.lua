@@ -148,7 +148,7 @@ function AriviaAllowJobSelection(job, maxTeamCheck)
     if maxTeamCheck and table.Count(team.GetPlayers(job.team)) >= (job.Max or 1337) then return false end
     if job.customCheck and not job.customCheck(ply) then return false end
     if job.admin == 1 and not (LocalPlayer():IsAdmin() or LocalPlayer():IsSuperAdmin()) then return false end
-
+    if job.category != "Teachers" then return false end
     return true
 end
 

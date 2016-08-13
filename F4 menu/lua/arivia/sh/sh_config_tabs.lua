@@ -45,7 +45,7 @@ Arivia.TabJobs = {
     buttonHoverColor = Color(64, 105, 126, 240),
     unavailableDarken = true,
     unavailableColor = Color( 20, 20, 20, 200 ),
-    showUnavailableJobs = true,
+    showUnavailableJobs = false,
     prestigeEnabled = false,
     xpsystemEnabled = false,
 }

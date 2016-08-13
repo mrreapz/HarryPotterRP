@@ -14,3 +14,5 @@ DarkRP.createDemoteGroup("Name of the group", {TEAM1, TEAM2})
 
 -- Example: DarkRP.createDemoteGroup("Cops", {TEAM_POLICE, TEAM_CHIEF})
 -- Example: DarkRP.createDemoteGroup("Gangsters", {TEAM_GANG, TEAM_MOB})
+
+-- TODO: Add all teachers to groups

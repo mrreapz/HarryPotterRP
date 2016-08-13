@@ -107,22 +107,6 @@ end
 
 local function HudClass()
 	local houseMessage = LocalPlayer():GetNWString("currentClass")
-	--local currentJob = LocalPlayer():getDarkRPVar("job")
-	--local houseColor
-	--if currentJob == "Slytherin Student" then
-	--	houseColor = Color(0,153,0,200)
---
-	--elseif currentJob == "Ravenclaw Student" then
-	--	houseColor = Color(51,51,255,200)
---
-	--elseif currentJob == "Hufflepuff Student" then
-	--	houseColor = Color(204,163,0,200)
---
-	--elseif currentJob == "Gryffindor Student" then 
-	--	houseColor = Color(204,0,0,200)
---
-	--else 
-	--	houseColor = Color(153,51,153,200)
 
 	local currentTeam = LocalPlayer():Team()
 	local houseColor = team.GetColor(currentTeam)

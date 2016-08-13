@@ -1,0 +1,8 @@
+"AddonInfo"
+{
+	"name"				"Arivia"
+	"version"			"2.0.2"
+	"author_name"			"Richard"
+	"info"				"DarkRP F4 Menu"
+	"override"			"0"
+}

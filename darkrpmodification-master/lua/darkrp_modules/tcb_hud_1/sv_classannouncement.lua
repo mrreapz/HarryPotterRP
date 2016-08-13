@@ -94,11 +94,11 @@ timer.Create( "ClassTime", classDuration, 0, function()
 			v:SetNwString("currentClass", "Your class has begun: " .. class[newClass2])
 
 		else 
-			print("current : ".. currentJob .."\n" ..
-				"g: " .. TEAM_GRYFFINDOR .. "\n"..
-				"s: " .. TEAM_SLYTHERIN .. "\n"..
-				"h: " .. TEAM_HUFFLEPUFF .. "\n"..
-				"r: " .. TEAM_RAVENCLAW .. "\n");
+			--print("current : ".. currentJob .."\n" ..
+			--	"g: " .. TEAM_GRYFFINDOR .. "\n"..
+			--	"s: " .. TEAM_SLYTHERIN .. "\n"..
+			--	"h: " .. TEAM_HUFFLEPUFF .. "\n"..
+			--	"r: " .. TEAM_RAVENCLAW .. "\n");
 			v:SetNWString("currentClass", "No Classes")
 
 		end

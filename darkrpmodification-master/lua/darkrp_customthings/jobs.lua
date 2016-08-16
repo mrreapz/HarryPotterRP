@@ -112,7 +112,7 @@ SetGlobalInt("TEAM_HEADMASTER", TEAM_HEADMASTER)
 
 TEAM_NURSE = DarkRP.createJob("Nurse", {
     color = Color(47, 79, 79, 255),
-    model = "models/player/kleiner.mdl",
+    model = "models/player/harrypotter/mcrae/mcrae.mdl",
     description = [[Madam Pomfree. A nurse who can heal any students.]],
     weapons = {"med_kit", "weapon_mindstick"},
     command = "Nurse",
@@ -141,7 +141,7 @@ SetGlobalInt("TEAM_DADAPROFESSOR", TEAM_DADAPROFESSOR)
 
 TEAM_CHARMSPROFESSOR = DarkRP.createJob("Charms Professor", {
    color = Color(255, 255, 255, 255),
-   model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
+   model = {"models/player/flitwick/flitwick.mdl"},
    description = [[Swish and flick!]],
    weapons = {"weapon_mindstick", "keys"},
    command = "Charms Professor",
@@ -157,7 +157,7 @@ SetGlobalInt("TEAM_CHARMSPROFESSOR", TEAM_CHARMSPROFESSOR)
 TEAM_TRANSFIGPROFESSOR = DarkRP.createJob("Transfigurations Professor", {
    color = Color(255, 255, 255, 255),
    model = {"models/player/naruto/mcgonalpm/snapev4.mdl"},
-   description = [[Transfigurations Professor]],
+   description = [[Not today, Mr Weasley...]],
    weapons = {"weapon_mindstick", "keys"},
    command = "Transfigurations Professor",
    max = 1,
@@ -199,10 +199,10 @@ TEAM_GAMEKEEPER = DarkRP.createJob("Gamekeeper", {
 })
 SetGlobalInt("TEAM_GAMEKEEPER", TEAM_GAMEKEEPER)
 
-TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("Wizardry	Professor", {
+TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("HOM Professor", {
    color = Color(255, 255, 255, 255),
    model = {"models/obese_male.mdl"},
-   description = [[Wizardry Professor]],
+   description = [[Magic Professor]],
    weapons = {"weapon_mindstick", "keys"},
    command = "Wizardry Professor",
    max = 1,
@@ -212,7 +212,7 @@ TEAM_WIZARDRYPROFESSOR = DarkRP.createJob("Wizardry	Professor", {
    hasLicense = false,
    category = "Teachers",
 })
-SetGlobalInt("TEAM_WIZARDRYPROFESSOR", TEAM_WIZARDRYPROFESSOR)
+SetGlobalInt("TEAM_HOMPROFESSOR", TEAM_HOMPROFESSOR)
 
 TEAM_MUGGLEPROFESSOR = DarkRP.createJob("Muggle Studies Professor", {
    color = Color(255, 255, 255, 255),
@@ -259,10 +259,10 @@ TEAM_ASTRONOMYPROFESSOR = DarkRP.createJob("Astronomy Professor", {
 })
 SetGlobalInt("TEAM_ASTRONOMYPROFESSOR", TEAM_ASTRONOMYPROFESSOR)
 
-TEAM_QUIDDITCHCOACH = DarkRP.createJob("Quidditch Coach", {
+TEAM_FLYINGCOACH = DarkRP.createJob("Flying Coach", {
    color = Color(255, 255, 255, 255),
    model = {"models/obese_male.mdl"},
-   description = [[Quidditch Professor]],
+   description = [[Flying Coach.]],
    weapons = {"weapon_mindstick", "keys"},
    command = "Quiditch Coach",
    max = 1,
@@ -272,7 +272,54 @@ TEAM_QUIDDITCHCOACH = DarkRP.createJob("Quidditch Coach", {
    hasLicense = false,
    category = "Teachers",
 })
-SetGlobalInt("TEAM_QUIDDITCHCOACH", TEAM_QUIDDITCHCOACH)
+SetGlobalInt("TEAM_FLYINGCOACH", TEAM_FLYINGCOACH)
+
+
+TEAM_SNATCHER = DarkRP.createJob("Snatcher", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/corvo.mdl"},
+   description = [[Well dont hang about... Snatch 'em!]],
+   weapons = {"weapon_hpmstick", "keys"},
+   command = "Snatcher",
+   max = 1,
+   salary = 100,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+SetGlobalInt("TEAM_SNATCHER", TEAM_SNATCHER)
+
+TEAM_DEATHEATER = DarkRP.createJob("Death Eater", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/deatheater.mdl"},
+   description = [[Well dont hang about... Snatch 'em!]],
+   weapons = {"weapon_hpmstick", "keys"},
+   command = "Death Eater",
+   max = 1,
+   salary = 100,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+SetGlobalInt("TEAM_DEATHEATER", TEAM_DEATHEATER)
+
+TEAM_CARETAKER= DarkRP.createJob("Caretaker", {
+   color = Color(255, 255, 255, 255),
+   model = {"models/player/lordsaw_flitch/flitchv2.mdl"},
+   description = [[Oh dear, we are in trouble...]],
+   weapons = {"keys", "slappers"},
+   command = "Caretaker",
+   max = 1,
+   salary = 250,
+   admin = 0,
+   vote = false,
+   hasLicense = false,
+   category = "Teachers",
+})
+SetGlobalInt("TEAM_CARETAKER", TEAM_CARETAKER)
+
 
 GAMEMODE.DefaultTeam = TEAM_UNSORTED
 

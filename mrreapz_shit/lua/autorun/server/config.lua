@@ -5,7 +5,7 @@ hook.Add("loadCustomDarkRPItems", "mrreapz_spellbooks", function()
 		-- MAKE SURE THAT ALL OF THE SPELL NAMES ARE LOWERCASE!
 		["rictusempra"] = {
 			spellbook_price = 420,
-			minimum_level = 69,
+			minimum_level = 1,
 			job_that_sells_it = TEAM_CITIZEN
 		}
 	}
